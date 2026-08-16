@@ -58,4 +58,4 @@
 | medium | 14 | 0.986 |
 | hard | 26 | 0.887 |
 
-> ROUGE/BLEU are reported recall-first. The gold references are compact paragraphs while systems A and C emit a longer six-section counselling document, so overlap precision (and therefore F1) is structurally depressed and should not be read as a quality ranking on its own.
+
