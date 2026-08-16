@@ -600,7 +600,7 @@ def _load_checkpoint(path: Path) -> dict[tuple[str, str], dict[str, Any]]:
     """Replay a checkpoint file into a {(system, case_id): record} map.
 
     A hard kill can leave a torn final line, so unparseable lines are dropped
-    rather than fatal — that pair simply gets re-run.
+    rather than fatal that pair simply gets re-run.
     """
     if not path.exists():
         return {}
