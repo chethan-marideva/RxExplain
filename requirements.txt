@@ -1,0 +1,9 @@
+openai>=1.55            # Azure AI Foundry / Azure OpenAI client
+python-dotenv>=1.0      # loads credentials from .env
+streamlit>=1.36         # demo web UI
+pandas>=2.2             # results tables
+rouge-score>=0.1.2      # ROUGE-1/2/L
+sacrebleu>=2.4          # BLEU / chrF
+textstat>=0.7.3         # Flesch-Kincaid, SMOG, Gunning Fog readability
+requests>=2.31          # openFDA / RxNorm retrieval
+matplotlib>=3.8         # analysis charts

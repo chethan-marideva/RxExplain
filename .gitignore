@@ -1,0 +1,33 @@
+# --- secrets: never commit -------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+
+# --- python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# --- project artefacts -----------------------------------------------------
+# Retrieval cache is regenerable with `rxexplain prefetch`; keep it out of git.
+data/cache/
+# Evaluation outputs are regenerable with `rxexplain eval`.
+results/*.json
+results/*.csv
+results/*.jsonl
+
+# --- editors / os ----------------------------------------------------------
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

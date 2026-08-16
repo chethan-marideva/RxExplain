@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rxexplain"
+version = "1.0.0"
+description = "Medical Prescription Explanation System - explains Indian-style prescriptions in plain English"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.55",
+    "python-dotenv>=1.0",
+    "streamlit>=1.36",
+    "pandas>=2.2",
+    "rouge-score>=0.1.2",
+    "sacrebleu>=2.4",
+    "textstat>=0.7.3",
+    "requests>=2.31",
+    "matplotlib>=3.8",
+]
+
+[project.scripts]
+rxexplain = "rxexplain.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rxexplain = ["kb/*.json"]
